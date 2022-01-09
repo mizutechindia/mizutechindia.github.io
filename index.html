@@ -1,30 +1,3 @@
-<?php
-error_reporting(0);
-ini_set('display_errors', 0);
-include "./admin/connect.php";
-if (isset($_POST['submit'])){
-  $name=$_POST['name'];
-  $name=str_replace("<", "lt;", $name);
-  $name=str_replace(">", "gt;", $name);
-  $phone=$_POST['phone'];
-  $email=$_POST['email'];
-  $email=str_replace("<", "lt;", $email);
-  $email=str_replace(">", "gt;", $email);
-  $query=$_POST['query'];
-  $query=str_replace("<", "lt;", $query);
-  $query=str_replace(">", "gt;", $query);
-  $name=stripcslashes($name);
-  $email=stripcslashes($email);
-  $phone=stripcslashes($phone);
-  $query=stripcslashes($query);
-  $name=mysqli_real_escape_string($con, $name);
-  $phone=mysqli_real_escape_string($con, $phone);
-  $email=mysqli_real_escape_string($con, $email);
-  $query=mysqli_real_escape_string($con, $query);
-  $sql="INSERT INTO `query` (`name`, `phone`, `email`, `query`) VALUES ('$name','$phone','$email','$query')";
-  $sqlquery=mysqli_query($con,$sql);
-}
-?>
     <!DOCTYPE html>
     <html lang="en">
 
