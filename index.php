@@ -376,7 +376,7 @@ $subject,$message,$headers;
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form action="index.php" method="post">
+<!--                         <form action="index.php" method="post">
                             <div class="form-group">
                                 <label for="name">Full Name</label>
                                 <input type="text" name="name" class="form-control" placeholder="Full Name" required>
@@ -393,7 +393,7 @@ $subject,$message,$headers;
                                 <label for="query">Ask your query</label>
                                 <textarea rows="4" cols="50" name="query" class="form-control" placeholder="Ask your query" required></textarea>
                             </div>
-                            <button type="submit" class="btn btn-primary" name="submit">Submit</button>
+                            <button type="submit" class="btn btn-primary" name="submit">Submit</button> -->
 <!--                             <?php
 //                 if($sqlquery){
                   ?>
@@ -403,7 +403,7 @@ $subject,$message,$headers;
                                 <?php
 //                 }
                 ?> -->
-                        </form>
+<!--                         </form> -->
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
