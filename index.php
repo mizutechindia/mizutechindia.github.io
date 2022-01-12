@@ -6,6 +6,7 @@ $message="message";
 $headers = 'From: webmaster@example.com' . "\r\n" .'Reply-To: webmaster@example.com' . "\r\n" .'X-Mailer: PHP/' . phpversion();
 	mail($email,$subject,$message);
 }
+?>
 <!DOCTYPE html>
     <html lang="en">
 
