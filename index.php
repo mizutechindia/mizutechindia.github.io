@@ -1,3 +1,10 @@
+<?php
+if(isset($_POST['subscribe'])){
+$email=$_POST['email'];
+$subject,$message,$headers;
+	mail($to,$subject,$message,$headers);
+}
+?>
 <!DOCTYPE html>
     <html lang="en">
 
@@ -388,13 +395,13 @@
                             </div>
                             <button type="submit" class="btn btn-primary" name="submit">Submit</button>
 <!--                             <?php
-                if($sqlquery){
+//                 if($sqlquery){
                   ?>
                                 <script>
                                     alert("Your query is submitted successfully");
                                 </script>
                                 <?php
-                }
+//                 }
                 ?> -->
                         </form>
                     </div>
@@ -1051,9 +1058,9 @@ function openCity(evt, cityName) {
             <h2 style="text-align:center;">Let’s find out how to work together</h2>
             <p style="text-align:center;"><b>Ready to start your project?  The contact information <br>collected through this form will only be used to send a <br>response to your inquiry.</b></p>
             <div class="newsletter-form aos-init aos-animate">
-                <form style="text-align: center;" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScz_fRK5HPi7VdZ40slNeSpbWRj2qoY8CKK2plxKuepzSl4hQ/formResponse" method="post" enctype="text/plain">
-                    <input class="email" type="email" placeholder="Ente your email" name="entry.584422344">
-                    <button type="submit" class="btn btn-primary btn-hover-secondary">Subscribe</button>
+                <form style="text-align: center;" action="" method="post" enctype="text/plain">
+                    <input class="email" type="email" placeholder="Ente your email" name="email">
+                    <button type="submit" name="subscribe" class="btn btn-primary btn-hover-secondary">Subscribe</button>
                 </form>
                 <br><br>
             </div>
