@@ -1,7 +1,9 @@
 <?php
 if(isset($_POST['subscribe'])){
 $email=$_POST['email'];
-$subject,$message,$headers;
+$subject;
+$message;
+$headers;
 	mail($to,$subject,$message,$headers);
 }
 ?>
