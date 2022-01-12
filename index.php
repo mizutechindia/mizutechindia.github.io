@@ -1,12 +1,11 @@
 <?php
 if(isset($_POST['subscribe'])){
 $email=$_POST['email'];
-$subject;
-$message;
-$headers;
-	mail($to,$subject,$message,$headers);
+$subject="subject";
+$message="message";
+$headers = 'From: webmaster@example.com' . "\r\n" .'Reply-To: webmaster@example.com' . "\r\n" .'X-Mailer: PHP/' . phpversion();
+	mail($email,$subject,$message);
 }
-?>
 <!DOCTYPE html>
     <html lang="en">
 
