@@ -1059,7 +1059,7 @@ function openCity(evt, cityName) {
             <h2 style="text-align:center;">Let’s find out how to work together</h2>
             <p style="text-align:center;"><b>Ready to start your project?  The contact information <br>collected through this form will only be used to send a <br>response to your inquiry.</b></p>
             <div class="newsletter-form aos-init aos-animate">
-                <form style="text-align: center;" action="index.php" method="post" enctype="text/plain">
+                <form style="text-align: center;" action="index.php" method="post">
                     <input class="email" type="email" placeholder="Ente your email" name="email">
                     <button type="submit" name="subscribe" class="btn btn-primary btn-hover-secondary">Subscribe</button>
                 </form>
